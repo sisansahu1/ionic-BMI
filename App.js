@@ -11,7 +11,7 @@ const resetBMI = () =>{
 const calculateBMI = () => {
   height = +personHeight.value;
   weight = +personWeight.value;
-  const bmi = weight / (weight * height);
+  const bmi = weight / (height* height);
   console.log(bmi);
 
   const resultElement = document.createElement('ion-card');
