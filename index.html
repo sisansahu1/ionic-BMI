@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <script src='App.js' defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+  </head>
+  <body>
+    <ion-app>
+        <ion-header >
+         <ion-toolbar color='primary'>
+          <ion-title>
+            BMI Calculator
+          </ion-title>
+         </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-item>
+            <ion-label position='floating'>Enter Height</ion-label>
+            <ion-input id='person-height'></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position='floating'>Enter Weight</ion-label>
+            <ion-input id='person-weight'></ion-input>
+          </ion-item>
+          <ion-button>Calculate</ion-button>
+
+          <div id ='result'></div>
+        </ion-content>
+    </ion-app>
+  </body>
+</html>
